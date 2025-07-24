@@ -13,6 +13,9 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/coder-cjl/SYATAuthSDK.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
   s.static_framework = true
+  s.resources = [
+    "SYATAuthSDK/Vendors/ATAuthSDK.framework/ATAuthSDK.bundle"
+  ]
   s.vendored_frameworks = 'SYATAuthSDK/Vendors/*.framework'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 end
